@@ -1,0 +1,48 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  border: solid 1px black;
+  margin: auto;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 15px;
+
+}
+
+.links {
+  background-color: #dcdcdc;
+  padding: 20px;
+  margin: 10px;
+  border: solid 1px black;
+
+}

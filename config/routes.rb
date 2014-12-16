@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+
+  root "links#index"
+
+  # get 'show' => 'links#show'
+  # get 'new' => 'links#new'
+  # get 'create' => 'links#create'
+  # get 'links/edit'
+  # get 'links/update'
+  # get 'links/destroy'
+
+  resources :links
+
+  put '/up_vote/:id' => 'links#up_vote', as: :upvote
+  put '/down_vote/:id' => 'links#down_vote', as: :downvote
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

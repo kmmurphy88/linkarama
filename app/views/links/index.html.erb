@@ -1,0 +1,19 @@
+<header>
+  <h1>Welcome to Linkarama</h1>
+</header>
+
+<% @links.each do |link| %>
+
+  <div class="links">
+    <ul>
+      <li>Title: <%= link.title %></li>
+      <li> <%= link_to link.url, ext_link(link.url) %> </li>
+      <li> <%= button_to "Upvote", upvote_path(link), method: :put %></li>
+      <li> <%= button_to "Downvote", downvote_path(link), method: :put %></li>
+      <li>Votes: <%= link.votes %></li>
+
+    </ul>
+
+  </div>
+
+<% end %>
