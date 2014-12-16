@@ -2,6 +2,8 @@
   <h1>Welcome to Linkarama</h1>
 </header>
 
+<%= button_to "Contribute a Link...", new_path, method: :get %>
+
 <% @links.each do |link| %>
 
   <div class="links">
