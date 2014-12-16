@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   put '/up_vote/:id' => 'links#up_vote', as: :upvote
   put '/down_vote/:id' => 'links#down_vote', as: :downvote
 
+  delete '/links/:id' => 'links#destroy', as: :destroy
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

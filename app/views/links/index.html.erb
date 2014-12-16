@@ -11,6 +11,8 @@
       <li> <%= button_to "Upvote", upvote_path(link), method: :put %></li>
       <li> <%= button_to "Downvote", downvote_path(link), method: :put %></li>
       <li>Votes: <%= link.votes %></li>
+      <li> <%= button_to "Remove Link", destroy_path(link), method: :delete %></li>
+
 
     </ul>
 
