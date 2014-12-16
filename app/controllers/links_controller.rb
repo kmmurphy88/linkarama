@@ -26,6 +26,9 @@ class LinksController < ApplicationController
   end
 
   def destroy
+    @link = Link.find(params[:id])
+    @link.destroy
+    redirect_to root_path
   end
 
   def up_vote
